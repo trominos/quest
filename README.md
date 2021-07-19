@@ -1,6 +1,7 @@
 # quest Solution
 ## Screen shoats
-   [quest homepage  quest-homepage.png]
+    ![plot](./quest-homepage.png)
+
 ## Docker File
 
 ## IAC Code
