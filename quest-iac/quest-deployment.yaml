@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: quest
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: quest
+  template:
+    metadata:
+      labels:
+        app: quest
+    spec:
+      containers:
+        - name: app
+          image: public.ecr.aws/b8k1w8b8/quest:latest
+          ports:
+            - containerPort: 3000
+          env:
+            - name: SECRET_WORD
+              value: TESLA
+          imagePullPolicy: Always
