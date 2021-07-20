@@ -18,6 +18,6 @@ spec:
           ports:
             - containerPort: 3000
           env:
-            - name: SECRET_WORD
+            - name: SECRET_WORD  #  if this is a real secret store it in AWS parameter store and replace it with Go templating
               value: TESLA
           imagePullPolicy: Always
